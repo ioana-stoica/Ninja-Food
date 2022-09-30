@@ -5,7 +5,22 @@ module.exports = {
         "dist/**/*.html"
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                primary: '#FF6363',
+                secondary: {
+                    100: '#E2E2D5',
+                    200: '#888883'
+                }
+            },
+            fontFamily: {
+                body: ['Nunito']
+            }
+        },
     },
     plugins: [],
 }
+
+
+//extend: use to add new values, aside from the core ones
+//theme: use to overwrite existing core values
